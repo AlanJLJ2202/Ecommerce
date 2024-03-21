@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecNM.Ecommerce.WebAPI", "TecNM.Ecommerce.WebAPI\TecNM.Ecommerce.WebAPI.csproj", "{E552903D-BB4D-4776-8A40-E4C405A7B466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecNM.Ecommerce.Core", "TecNM.Ecommerce.Core\TecNM.Ecommerce.Core.csproj", "{3D5D8A8C-371E-4254-96A2-96A712660766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecNM.Ecommerce.Tests", "TecNM.Ecommerce.Tests\TecNM.Ecommerce.Tests.csproj", "{9D9967E4-E24D-4852-9489-F6999EA8BEB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E552903D-BB4D-4776-8A40-E4C405A7B466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E552903D-BB4D-4776-8A40-E4C405A7B466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E552903D-BB4D-4776-8A40-E4C405A7B466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E552903D-BB4D-4776-8A40-E4C405A7B466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5D8A8C-371E-4254-96A2-96A712660766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5D8A8C-371E-4254-96A2-96A712660766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5D8A8C-371E-4254-96A2-96A712660766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5D8A8C-371E-4254-96A2-96A712660766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D9967E4-E24D-4852-9489-F6999EA8BEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D9967E4-E24D-4852-9489-F6999EA8BEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D9967E4-E24D-4852-9489-F6999EA8BEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D9967E4-E24D-4852-9489-F6999EA8BEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

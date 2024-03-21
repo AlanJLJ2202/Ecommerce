@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/TecNM.Ecommerce.WebAPI.props" />
+</Project>

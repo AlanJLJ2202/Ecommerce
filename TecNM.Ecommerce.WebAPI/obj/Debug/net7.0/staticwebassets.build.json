@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DnWb/tpiC8HESzxMFl0D/DKWyjJg6DEpqNwPXVcRdtg=",
+  "Source": "TecNM.Ecommerce.WebAPI",
+  "BasePath": "_content/TecNM.Ecommerce.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,11 @@
+/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/bin/Debug/net7.0/TecNM.Ecommerce.Core.deps.json
+/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/bin/Debug/net7.0/TecNM.Ecommerce.Core.dll
+/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/bin/Debug/net7.0/TecNM.Ecommerce.Core.pdb
+/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/obj/Debug/net7.0/TecNM.Ecommerce.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/obj/Debug/net7.0/TecNM.Ecommerce.Core.AssemblyInfoInputs.cache
+/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/obj/Debug/net7.0/TecNM.Ecommerce.Core.AssemblyInfo.cs
+/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/obj/Debug/net7.0/TecNM.Ecommerce.Core.csproj.CoreCompileInputs.cache
+/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/obj/Debug/net7.0/TecNM.Ecommerce.Core.dll
+/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/obj/Debug/net7.0/refint/TecNM.Ecommerce.Core.dll
+/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/obj/Debug/net7.0/TecNM.Ecommerce.Core.pdb
+/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/obj/Debug/net7.0/ref/TecNM.Ecommerce.Core.dll
