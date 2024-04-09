@@ -13,7 +13,7 @@ public class DbContext : IDbContext
         _config = config;
     }
 
-    private readonly string _connectionString = "server=localhost;user=root;Password=Jalpa117;database=Ecommerce;port=3306";
+    //private readonly string _connectionString = "server=localhost;user=root;Password=Jalpa117;database=Ecommerce;port=3306";
     private MySqlConnection _connection;
 
     public DbConnection Connection

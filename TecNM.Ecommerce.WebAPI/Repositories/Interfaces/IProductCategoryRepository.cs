@@ -16,5 +16,5 @@ public interface IProductCategoryRepository
     Task<bool> DeleteAsync(int id);
     
     //Metodo para obtener una categoria por id
-    Task<ProductCategory> GetById(int id);
+    Task<ProductCategory?> GetById(int id);
 }

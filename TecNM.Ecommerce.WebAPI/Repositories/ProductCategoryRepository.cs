@@ -146,22 +146,8 @@ public class ProductCategoryRepository : IProductCategoryRepository
         }
     }
 
-
-
-
-
-
     public ProductCategoryRepository()
     {
         _categories = new List<ProductCategory>();
     }
-
-   
-    
-
-    
-
-    
-
-    
 }

@@ -3,6 +3,8 @@ using TecNM.Ecommerce.WebAPI.DataAccess;
 using TecNM.Ecommerce.WebAPI.DataAccess.Interfaces;
 using TecNM.Ecommerce.WebAPI.Repositories;
 using TecNM.Ecommerce.WebAPI.Repositories.Interfaces;
+using TecNM.Ecommerce.WebAPI.Services;
+using TecNM.Ecommerce.WebAPI.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IProductCategoryRepository, ProductCategoryRepository>();
+builder.Services.AddScoped<IProductCategoryService, ProductCategoryService>();
 builder.Services.AddScoped<IDbContext, DbContext>();
 
 var app = builder.Build();
