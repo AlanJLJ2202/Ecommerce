@@ -11,12 +11,10 @@ namespace TecNM.Ecommerce.WebAPI.Controllers;
 [Route("api/[controller]")]
 public class ProductCategoriesController : ControllerBase
 {
-    private readonly IProductCategoryRepository _productCategoryRepository;
     private readonly IProductCategoryService _productCategoryService;
     
-    public ProductCategoriesController(IProductCategoryRepository productCategoryRepository, IProductCategoryService productCategoryService)
+    public ProductCategoriesController(IProductCategoryService productCategoryService)
     {
-        _productCategoryRepository = productCategoryRepository;
         _productCategoryService = productCategoryService;
     }
     
@@ -35,28 +33,13 @@ public class ProductCategoriesController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Response<ProductCategoryDto>>> Post([FromBody] ProductCategoryDto categoryDto)
     {
-        
-        //category = await _productCategoryRepository.SaveAsync(category);
-        
-        var response = new Response<ProductCategoryDto>();
-        var category = new ProductCategory
+
+        var response = new Response<ProductCategoryDto>()
         {
-            Name = categoryDto.Name,
-            Description = categoryDto.Description,
-            CreatedBy = "",
-            CreatedDate = DateTime.Now,
-            UpdatedBy = "Test",
-            UpdateDate = DateTime.Now
+            data = await _productCategoryService.SaveAsync(categoryDto)
         };
 
-        //var response = new Response<ProductCategory>();
-        //response.data = category;
-        
-        category = await _productCategoryRepository.SaveAsync(category);
-        categoryDto.id = category.id;
-        response.data = categoryDto;
-
-        return Created($"/api/[controller]/{category.id}", response); 
+        return Created($"/api/[controller]/{response.data.id}", response); 
     }
 
 
@@ -66,19 +49,14 @@ public class ProductCategoriesController : ControllerBase
     {
         var response = new Response<ProductCategoryDto>();
         var category = await _productCategoryService.GetById(id);
-        
-        
-        if (category == null)
+
+        if (!await _productCategoryService.ProductCategoryExist(id))
         {
             response.Errors.Add("Category not found");
             return NotFound(response);
         }
-
-        //var categoryDto = new ProductCategoryDto(category);
-        //response.data = categoryDto;
         
         response.data = category;
-
         response.Message = "Category found";
         return Ok(response);
     }
@@ -88,22 +66,15 @@ public class ProductCategoriesController : ControllerBase
     [HttpPut]
     public async Task<ActionResult<Response<ProductCategoryDto>>> Update([FromBody] ProductCategoryDto categoryDto)
     {
-        var response = new Response<ProductCategory>();
-        var category = await _productCategoryRepository.GetById(categoryDto.id);
-
-        if (category == null)
+        var response = new Response<ProductCategoryDto>();
+        
+        if(!await _productCategoryService.ProductCategoryExist(categoryDto.id))
         {
-            response.Errors.Add("Product category not found");
+            response.Errors.Add("Category not found");
             return NotFound(response);
         }
-
-        category.Name = categoryDto.Name;
-        category.Description = categoryDto.Description;
-        category.UpdatedBy = "";
-        category.UpdateDate = DateTime.Now;
         
-        await _productCategoryRepository.UpdateAsync(category);
-        
+        response.data = await _productCategoryService.UpdateAsync(categoryDto);
         return Ok(response);
     }
 
@@ -112,9 +83,16 @@ public class ProductCategoriesController : ControllerBase
     public async Task<ActionResult<Response<bool>>> Delete(int id)
     {
         var response = new Response<bool>();
-        var result = await _productCategoryRepository.DeleteAsync(id);
-        response.data = result;
-        return Ok(response);
+       
+         if (!await _productCategoryService.ProductCategoryExist(id))
+         {
+              response.Errors.Add("Category not found");
+              return NotFound(response);
+         }
+         
+         response.data = await _productCategoryService.DeleteAsync(id);
+         
+         return Ok(response);
     }
 }
 

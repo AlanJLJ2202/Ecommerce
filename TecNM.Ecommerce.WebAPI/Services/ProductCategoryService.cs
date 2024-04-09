@@ -1,3 +1,5 @@
+using TecNM.Ecommerce.Core.Entities;
+using TecNM.Ecommerce.Core.Http;
 using TecNM.Ecommerce.WebAPI.Dto;
 using TecNM.Ecommerce.WebAPI.Repositories.Interfaces;
 using TecNM.Ecommerce.WebAPI.Services;
@@ -31,14 +33,40 @@ public class ProductCategoryService : IProductCategoryService
         return (category != null);
     }
 
-    public Task<ProductCategoryDto> SaveAsync(ProductCategoryDto category)
+    public async Task<ProductCategoryDto> SaveAsync(ProductCategoryDto categoryDto)
     {
-        throw new NotImplementedException();
+        var category = new ProductCategory
+        {
+            Name = categoryDto.Name,
+            Description = categoryDto.Description,
+            CreatedBy = "",
+            CreatedDate = DateTime.Now,
+            UpdatedBy = "",
+            UpdateDate = DateTime.Now
+        };
+        
+        category = await _productCategoryRepository.SaveAsync(category);
+        categoryDto.id = category.id;
+
+        return categoryDto;
     }
 
-    public Task<ProductCategoryDto> UpdateAsync(ProductCategoryDto category)
+    public async Task<ProductCategoryDto> UpdateAsync(ProductCategoryDto categoryDto)
     {
-        throw new NotImplementedException();
+        var response = new Response<ProductCategory>();
+        var category = await _productCategoryRepository.GetById(categoryDto.id);
+
+        if (category == null)
+            throw new Exception("Category not found");
+            
+        category.Name = categoryDto.Name;
+        category.Description = categoryDto.Description;
+        category.UpdatedBy = "";
+        category.UpdateDate = DateTime.Now;
+        
+        await _productCategoryRepository.UpdateAsync(category);
+
+        return categoryDto;
     }
 
     public async Task<List<ProductCategoryDto>> GetAllAsync()
@@ -52,9 +80,9 @@ public class ProductCategoryService : IProductCategoryService
         return categoriesDto;
     }
 
-    public Task<bool> DeleteAsync(int id)
+    public async Task<bool> DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        return await _productCategoryRepository.DeleteAsync(id);
     }
 
     public async Task<ProductCategoryDto> GetById(int id)
