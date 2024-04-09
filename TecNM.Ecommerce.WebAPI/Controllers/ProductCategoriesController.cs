@@ -45,7 +45,7 @@ public class ProductCategoriesController : ControllerBase
             Description = categoryDto.Description,
             CreatedBy = "",
             CreatedDate = DateTime.Now,
-            UpdatedBy = "",
+            UpdatedBy = "Test",
             UpdateDate = DateTime.Now
         };
 
@@ -56,7 +56,7 @@ public class ProductCategoriesController : ControllerBase
         categoryDto.id = category.id;
         response.data = categoryDto;
 
-        return Created($"/api/[controller]/{category.id}", response);
+        return Created($"/api/[controller]/{category.id}", response); 
     }
 
 
