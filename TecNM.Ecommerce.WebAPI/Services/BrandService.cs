@@ -75,12 +75,12 @@ public class BrandService : IBrandService
         return await _brandRepository.DeleteAsync(id);
     }
 
-    public async Task<BrandDto> GetById(int id)
+    public async Task<BrandDto?> GetById(int id)
     {
         var brand = await _brandRepository.GetById(id);
         if (brand == null)
         {
-            throw new Exception("Product brand not found");
+            return null;
         }
 
         var brandDto = new BrandDto(brand);

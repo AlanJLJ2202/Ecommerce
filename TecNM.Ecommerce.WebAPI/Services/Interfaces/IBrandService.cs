@@ -18,5 +18,5 @@ public interface IBrandService
     Task<bool> DeleteAsync(int id);
     
     //Metodo para obtener una categoria por id
-    Task<BrandDto> GetById(int id);
+    Task<BrandDto?> GetById(int id);
 }

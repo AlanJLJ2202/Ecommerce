@@ -65,22 +65,6 @@ public class BrandRepository : IBrandRepository
         var brands = await _dbContext.Connection.QueryAsync<Brand>(sql);
         return brands.ToList();
     }
-
-
-    /*public async Task<ProductCategory> GetById(int id)
-    {
-        string sql = $"SELECT * FROM ProductCategory WHERE id = {id} AND IsDeleted = 0";
-        
-        
-        //var category = await _dbContext.Connection.GetAsync<ProductCategory>(id);
-        var category = await _dbContext.Connection.QueryAsync<ProductCategory>(sql);
-        
-        
-        if (category.First() == null)
-            return null;
-
-        return category.First().isDeleted == true ? null : category.First();
-    }*/
     
     public async Task<Brand> GetById(int id)
     {
@@ -105,28 +89,14 @@ public class BrandRepository : IBrandRepository
     
     public async Task<bool> DeleteAsync(int id)
     {
-        /*var category = await GetById(id);
-        
-        
-        if (category == null)
-            return false;
-
-        category.IsDeleted = true;
-        return await _dbContext.Connection.UpdateAsync(category);*/
-        
         try
         {
-
             string sql = $"UPDATE Brands SET IsDeleted = 1 WHERE Id = {id}";
-    
-            
-            
             await _dbContext.Connection.OpenAsync();
     
             using (var command = _dbContext.Connection.CreateCommand())
             {
                 command.CommandText = sql;
-        
                 await command.ExecuteNonQueryAsync();
             }
     

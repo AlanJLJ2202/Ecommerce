@@ -47,13 +47,14 @@ public class BrandsController : ControllerBase
     public async Task<ActionResult<Response<BrandDto>>> GetByID(int id)
     {
         var response = new Response<BrandDto>();
-        var brand = await _brandService.GetById(id);
-
+        
         if (!await _brandService.BrandExist(id))
         {
             response.Errors.Add("Brand not found");
             return NotFound(response);
         }
+        
+        var brand = await _brandService.GetById(id);
         
         response.data = brand;
         response.Message = "Brand found";
