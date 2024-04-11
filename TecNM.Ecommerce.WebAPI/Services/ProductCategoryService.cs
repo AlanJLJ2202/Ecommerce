@@ -7,19 +7,12 @@ using TecNM.Ecommerce.WebAPI.Services.Interfaces;
 
 namespace TecNM.Ecommerce.WebAPI.Services;
 
+
+
 public class ProductCategoryService : IProductCategoryService
 {
 
     private readonly IProductCategoryRepository _productCategoryRepository;
-
-    // public ProductCategoryService(
-    //         IProductCategoryRepository productCategoryRepository, 
-    //         IProductCategoryService productCategoryService
-    //     )
-    // {
-    //     _productCategoryRepository = productCategoryRepository;
-    //     _productCategoryService = productCategoryService;
-    // }
     
     public ProductCategoryService( IProductCategoryRepository productCategoryRepository)
     {
