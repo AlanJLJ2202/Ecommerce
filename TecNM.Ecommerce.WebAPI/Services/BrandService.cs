@@ -14,9 +14,7 @@ public class BrandService : IBrandService
     {
         _brandRepository = brandRepository;
     }
-   
     
-
     public async Task<bool> BrandExist(int id)
     {
         var brand = await _brandRepository.GetById(id);

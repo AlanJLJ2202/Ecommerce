@@ -21,9 +21,7 @@ public class BrandRepository : IBrandRepository
     {
         //await _dbContext.Connection.InsertAsync(category);
         //return category;
-        
-        
-            string sql = $"INSERT INTO Brands (Name, Description, IsDeleted) VALUES ('{brand.Name}', '{brand.Description}', {brand.IsDeleted})";
+        string sql = $"INSERT INTO Brands (Name, Description, IsDeleted) VALUES ('{brand.Name}', '{brand.Description}', {brand.IsDeleted})";
     
         await _dbContext.Connection.OpenAsync();
     

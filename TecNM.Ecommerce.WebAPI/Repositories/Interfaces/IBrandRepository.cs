@@ -19,3 +19,4 @@ public interface IBrandRepository
     Task<Brand?> GetById(int id);
    
 }
+

@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecNM.Ecommerce.Core", "Tec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecNM.Ecommerce.Tests", "TecNM.Ecommerce.Tests\TecNM.Ecommerce.Tests.csproj", "{9D9967E4-E24D-4852-9489-F6999EA8BEB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecNM.Ecommerce.WebApp", "TecNM.Ecommerce.WebApp\TecNM.Ecommerce.WebApp.csproj", "{4ABF288D-95F2-4E5F-9087-C4B1E77271FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecNM.Ecommerce.WebSite", "TecNM.Ecommerce.WebSite\TecNM.Ecommerce.WebSite.csproj", "{58A9C091-0489-48A4-B010-6D7A3297B6E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{9D9967E4-E24D-4852-9489-F6999EA8BEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D9967E4-E24D-4852-9489-F6999EA8BEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D9967E4-E24D-4852-9489-F6999EA8BEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABF288D-95F2-4E5F-9087-C4B1E77271FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABF288D-95F2-4E5F-9087-C4B1E77271FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABF288D-95F2-4E5F-9087-C4B1E77271FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABF288D-95F2-4E5F-9087-C4B1E77271FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A9C091-0489-48A4-B010-6D7A3297B6E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A9C091-0489-48A4-B010-6D7A3297B6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A9C091-0489-48A4-B010-6D7A3297B6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A9C091-0489-48A4-B010-6D7A3297B6E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

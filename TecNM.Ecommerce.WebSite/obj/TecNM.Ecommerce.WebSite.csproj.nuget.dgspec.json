@@ -1,0 +1,212 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebSite/TecNM.Ecommerce.WebSite.csproj": {}
+  },
+  "projects": {
+    "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/TecNM.Ecommerce.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/TecNM.Ecommerce.Core.csproj",
+        "projectName": "TecNM.Ecommerce.Core",
+        "projectPath": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/TecNM.Ecommerce.Core.csproj",
+        "packagesPath": "/Users/alanjlj/.nuget/packages/",
+        "outputPath": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/alanjlj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.405/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebAPI/TecNM.Ecommerce.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebAPI/TecNM.Ecommerce.WebAPI.csproj",
+        "projectName": "TecNM.Ecommerce.WebAPI",
+        "projectPath": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebAPI/TecNM.Ecommerce.WebAPI.csproj",
+        "packagesPath": "/Users/alanjlj/.nuget/packages/",
+        "outputPath": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/alanjlj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/TecNM.Ecommerce.Core.csproj": {
+                "projectPath": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/TecNM.Ecommerce.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.3.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.405/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebSite/TecNM.Ecommerce.WebSite.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebSite/TecNM.Ecommerce.WebSite.csproj",
+        "projectName": "TecNM.Ecommerce.WebSite",
+        "projectPath": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebSite/TecNM.Ecommerce.WebSite.csproj",
+        "packagesPath": "/Users/alanjlj/.nuget/packages/",
+        "outputPath": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebSite/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/alanjlj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/TecNM.Ecommerce.Core.csproj": {
+                "projectPath": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.Core/TecNM.Ecommerce.Core.csproj"
+              },
+              "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebAPI/TecNM.Ecommerce.WebAPI.csproj": {
+                "projectPath": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebAPI/TecNM.Ecommerce.WebAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.405/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
