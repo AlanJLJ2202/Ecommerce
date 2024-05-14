@@ -7,9 +7,9 @@ public interface IProductCategoryService
 {
     Task<Response<List<ProductCategoryDto>>> GetAllAsync();
     
-    Task<Response<List<ProductCategoryDto>>> GetById(int id);
+    Task<Response<ProductCategoryDto>> GetById(int id);
     
-    Task<Response<List<ProductCategoryDto>>> SaveAsync(ProductCategoryDto productCategoryDto);
+    Task<Response<ProductCategoryDto>> SaveAsync(ProductCategoryDto productCategoryDto);
     
     Task<Response<List<ProductCategoryDto>>> UpdateAsync(ProductCategoryDto productCategoryDto);
 

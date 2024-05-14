@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "BmVleVcHDXs8YmkxKldfA2IZLIOXvcZNEhWR0J/tVDc=",
+  "Hash": "AQDOmja5ec2stCcZ6S80lHTV9t/wsjdo8zvMH/V5JOs=",
   "Source": "TecNM.Ecommerce.WebSite",
   "BasePath": "_content/TecNM.Ecommerce.WebSite",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebAPI/TecNM.Ecommerce.WebAPI.csproj",
+      "Version": 2,
+      "Source": "TecNM.Ecommerce.WebAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "TecNM.Ecommerce.WebSite/wwwroot",
