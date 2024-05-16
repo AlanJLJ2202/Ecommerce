@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using TecNM.Ecommerce.Core.Http;
 using TecNM.Ecommerce.WebAPI.Dto;
 
 namespace TecNM.Ecommerce.WebSite.Pages.ProductCategory;
@@ -22,4 +24,26 @@ public class ListModel : PageModel
     {
         
     }
+
+
+    /*public async Task<IActionResult> onPostAsync()
+    {
+        if (!ModelState.IsValid)
+        {
+            return Page();
+        }
+
+        Response<ProductCategoryDto> response;
+        if (ProductCategoryDto.id > 0)
+        {
+            response = await _service.UpdateAsync(ProductCategoryDto);
+        }
+        else
+        {
+            response = await _service.SaveAsync(ProductCategoryDto);
+        }
+
+        ProductCategoryDto = response.data;
+        return RedirectToPage("./List");
+    }*/
 }

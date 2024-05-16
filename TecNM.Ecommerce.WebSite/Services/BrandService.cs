@@ -39,18 +39,44 @@ public class BrandService : IBrandService
         return response;
     }
 
-    public Task<Response<BrandDto>> SaveAsync(BrandDto brandDto)
+    public async Task<Response<BrandDto>> SaveAsync(BrandDto brandDto)
     {
-        throw new NotImplementedException();
+        var url = $"{_baseURL}{_endpoint}";
+        var jsonRequest = JsonConvert.SerializeObject(brandDto);
+        var content = new StringContent(jsonRequest, System.Text.Encoding.UTF8, "application/json");
+        var client = new HttpClient();
+        var res = await client.PostAsync(url, content);
+        var json = await res.Content.ReadAsStringAsync();
+
+        var response = JsonConvert.DeserializeObject<Response<BrandDto>>(json);
+
+        return response;
     }
 
-    public Task<Response<List<BrandDto>>> UpdateAsync(BrandDto brandDto)
+    public async Task<Response<BrandDto>> UpdateAsync(BrandDto brandDto)
     {
-        throw new NotImplementedException();
+        var url = $"{_baseURL}{_endpoint}";
+        var jsonRequest = JsonConvert.SerializeObject(brandDto);
+        var content = new StringContent(jsonRequest, System.Text.Encoding.UTF8, "application/json");
+        var client = new HttpClient();
+        var res = await client.PutAsync(url, content);
+        var json = await res.Content.ReadAsStringAsync();
+
+        var response = JsonConvert.DeserializeObject<Response<BrandDto>>(json);
+
+        return response;
     }
 
-    public Task<Response<bool>> DeleteAsync(int id)
+    public async Task<Response<bool>> DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        var url = $"{_baseURL}{_endpoint}?id={id}";
+        Console.WriteLine(url);
+        var client = new HttpClient();
+        var res = await client.DeleteAsync(url);
+        var json = await res.Content.ReadAsStringAsync();
+
+        var response = JsonConvert.DeserializeObject<Response<bool>>(json);
+
+        return response;
     }
 }

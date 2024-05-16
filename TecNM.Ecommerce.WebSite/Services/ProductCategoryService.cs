@@ -64,8 +64,15 @@ public class ProductCategoryService : IProductCategoryService
         throw new NotImplementedException();
     }
 
-    public Task<Response<bool>> DeleteAsync(int id)
-    {
-        throw new NotImplementedException();
-    }
+    // public async Task<Response<bool>> DeleteAsync(int id)
+    // {
+    //     var url = $"{_baseURL}{_endpoint}/{id}";
+    //     var client = new HttpClient();
+    //     var res = await client.DeleteAsync(url);
+    //     var json = await res.Content.ReadAsStringAsync();
+    //     var response = JsonConvert.DeserializeObject<Response<ProductCategoryDto>>(json);
+    //     
+    //     return response;
+    // }
+    
 }

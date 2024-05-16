@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebSite
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebSite/Pages/Brands/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQnJhbmRzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/alanjlj/RiderProjects/TecNM.Ecommerce/TecNM.Ecommerce.WebSite/Pages/Brands/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQnJhbmRzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

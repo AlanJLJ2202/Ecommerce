@@ -13,5 +13,5 @@ public interface IProductCategoryService
     
     Task<Response<List<ProductCategoryDto>>> UpdateAsync(ProductCategoryDto productCategoryDto);
 
-    Task<Response<bool>> DeleteAsync(int id);
+    //Task<Response<bool>> DeleteAsync(int id);
 }

@@ -11,7 +11,7 @@ public interface IBrandService
     
     Task<Response<BrandDto>> SaveAsync(BrandDto brandDto);
     
-    Task<Response<List<BrandDto>>> UpdateAsync(BrandDto brandDto);
+    Task<Response<BrandDto>> UpdateAsync(BrandDto brandDto);
     
     Task<Response<bool>> DeleteAsync(int id);
 }
