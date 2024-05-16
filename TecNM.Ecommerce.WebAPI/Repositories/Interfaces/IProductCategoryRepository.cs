@@ -17,4 +17,7 @@ public interface IProductCategoryRepository
     
     //Metodo para obtener una categoria por id
     Task<ProductCategory?> GetById(int id);
+
+    //Método para obtener una categoria por nombre
+    Task<ProductCategory> GetByName(string name, int id = 0);
 }

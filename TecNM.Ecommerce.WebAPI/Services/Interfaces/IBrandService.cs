@@ -19,4 +19,6 @@ public interface IBrandService
     
     //Metodo para obtener una categoria por id
     Task<BrandDto?> GetById(int id);
+
+    Task<bool> ExistByName(string name, int id = 0);
 }

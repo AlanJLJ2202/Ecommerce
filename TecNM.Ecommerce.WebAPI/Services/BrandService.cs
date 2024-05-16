@@ -84,4 +84,12 @@ public class BrandService : IBrandService
         var brandDto = new BrandDto(brand);
         return brandDto;
     }
+
+
+    public async Task<bool> ExistByName(string name, int id = 0)
+    {
+        var brand = await _brandRepository.GetByName(name, id);
+        return brand != null;
+    }
+    
 }

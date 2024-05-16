@@ -150,4 +150,12 @@ public class ProductCategoryRepository : IProductCategoryRepository
     {
         _categories = new List<ProductCategory>();
     }
+
+
+    public async Task<ProductCategory> GetByName(string name, int id = 0)
+    {
+        string sql = $"SELECT * FROM ProductCategory WHERE Name = '{name}' AND id <> {id}";
+        var categories = await _dbContext.Connection.QueryAsync<ProductCategory>(sql);
+        return categories.ToList().FirstOrDefault();
+    }
 }

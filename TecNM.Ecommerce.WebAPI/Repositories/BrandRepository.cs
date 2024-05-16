@@ -108,6 +108,13 @@ public class BrandRepository : IBrandRepository
             return false;
         }
     }
+    
+    public async Task<Brand> GetByName(string name, int id = 0)
+    {
+        string sql = $"SELECT * FROM Brands WHERE Name = '{name}' AND id <> {id}";
+        var brands = await _dbContext.Connection.QueryAsync<Brand>(sql);
+        return brands.ToList().FirstOrDefault();
+    }
 
     public BrandRepository()
     {

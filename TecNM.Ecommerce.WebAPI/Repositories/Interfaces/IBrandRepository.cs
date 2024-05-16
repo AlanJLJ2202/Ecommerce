@@ -17,6 +17,8 @@ public interface IBrandRepository
     
     //Metodo para obtener una marca por id
     Task<Brand?> GetById(int id);
-   
+
+
+    Task<Brand> GetByName(string name, int id = 0);
 }
 

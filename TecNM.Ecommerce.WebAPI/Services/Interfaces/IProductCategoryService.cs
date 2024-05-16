@@ -20,4 +20,6 @@ public interface IProductCategoryService
     
     //Metodo para obtener una categoria por id
     Task<ProductCategoryDto> GetById(int id);
+    
+    Task<bool> ExistByName(string name, int id = 0);
 }
